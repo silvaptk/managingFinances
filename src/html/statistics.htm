@@ -1,0 +1,16 @@
+<section class = "statistics">
+    <div class = "card" ng-repeat = "statisticCard in statistics">
+        <div class = "cardHeader">
+            <h3>{{statisticCard.label}}</h3>
+            <img ng-if = "statisticCard.hasImg" src = "{{statisticCard.imgAddr}}" alt = "{{statisticCard.imgDesc}}">
+        </div>
+        <h4 ng-if = "statisticCard.isCurrency">R$</h4>
+        <h4 ng-if = "!statisticCard.isCurrency">Ocorrências</h4>
+        <h2 class = "cardContent" ng-if = "statisticCard.isCurrency">
+            {{statisticCard.value | currencyFormat}}
+        </h2>
+        <h2 class = "cardContent" ng-if = "!statisticCard.isCurrency">
+            {{statisticCard.value}}
+        </h2>
+    </div>
+</section>

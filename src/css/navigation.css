@@ -1,0 +1,32 @@
+nav {
+    width: calc(100% - 2rem);
+    max-width: 70rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 3rem auto 0;
+}
+
+nav a {
+    width: 30%;
+}
+
+nav a button {
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1.5rem;
+    font-size: var(--large);
+    cursor: pointer;
+    transition-duration: 0.2s;
+    margin-bottom: 0.5rem;
+    background-color: #EEE;
+}
+
+nav a button:hover,
+nav a button.active {
+    margin-bottom: 0;
+    border-bottom: 0.5rem solid #555;
+    font-weight: bold;
+}

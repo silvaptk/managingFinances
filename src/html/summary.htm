@@ -1,0 +1,10 @@
+<div ng-repeat = "card in summaryCards" class = "card">    
+    <div class = "desc">
+        <h3>{{card.label}}</h3>
+        <img src = "{{card.imgAddr}}" alt = "{{card.imgAlt}}">
+    </div>
+    <div class = "content">
+        <h4>R$</h4>
+        <h2>{{card.getTotal() | currencyFormat}}</h2>
+    </div>
+</div>

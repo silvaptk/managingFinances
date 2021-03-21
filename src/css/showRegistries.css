@@ -1,0 +1,57 @@
+section.registries {
+    width: calc(100% - 2rem);
+    max-width: 70rem;
+    margin: 0 auto 1rem;
+    padding: 2rem;
+    border-top: 0.5rem solid #555;
+}
+
+.registry {
+    margin: 1rem 0;
+}
+
+.registry button.registryHeader {
+    background-color: #111;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    color: #EEE;
+    border: none;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.registry button.registryHeader:hover {
+    opacity: 1;
+}
+
+.registry button.registryHeader.deactivated {
+    opacity: 0.9;
+}
+
+.registry button.registryHeader.deactivated:hover {
+    opacity: 1;
+}
+
+.registry .registryHeader img {
+    width: 2.5rem;
+}
+
+.registry .registryDescription {
+    padding: 1rem 2rem;
+    background-color: #EEE;
+
+    transition: all 0.5s;
+
+    max-height: 100rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.registry .registryDescription.ng-hide {
+    padding: 0 2rem;
+    max-height: 0rem;
+}

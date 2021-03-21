@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "pt-BR">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>AngularJS ─ Gerenciando finanças</title>
+        
+        <link rel = "stylesheet" href = "./src/css/addRegistry.css">
+        <link rel = "stylesheet" href = "./src/css/main.css">
+        <link rel = "stylesheet" href = "./src/css/navigation.css">
+        <link rel = "stylesheet" href = "./src/css/showRegistries.css">
+        <link rel = "stylesheet" href = "./src/css/statistics.css">
+        <link rel = "stylesheet" href = "./src/css/summary.css">
+
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+    </head>
+    
+    <body>
+        <div ng-app = "managingFinances">
+            <h1>Gerenciando finanças</h1>
+
+            <div ng-include = "'./src/html/summary.htm'" class = "summary" ng-controller = "summaryController">
+            </div>
+
+            <nav ng-controller = "navController">
+                <a href = "#!addRegistry" ng-click = "changeRoute('/addRegistry')">
+                    <button ng-class = "routesState['/addRegistry']">Adicionar registro</button>
+                </a>
+                <a href = "#!showRegistries" ng-click = "changeRoute('/showRegistries')">
+                    <button ng-class = "routesState['/showRegistries']">Ver registros</button>
+                </a>
+                <a href = "#!statistics" ng-click = "changeRoute('/statistics')">
+                    <button ng-class = "routesState['/statistics']">Estatísticas</button>
+                </a>
+            </nav>
+
+            <div ng-view class = "sectionConteiner"></div>
+        </div>
+
+        <script src = "src/js/main.js"></script>
+        <!-- Controlando resumo -->
+        <script src = "src/js/summary.js"></script>
+        <!-- Controlando navegação -->
+        <script src = "src/js/navigation.js"></script>
+        <!-- Controlando adição de registros -->
+        <script src = "src/js/addRegistry.js"></script>
+        <!-- Controlando exibição de registros -->
+        <script src = "src/js/showRegistries.js"></script>
+        <!-- Controlando estatísticas -->
+        <script src = "src/js/statistics.js"></script>
+    </body>
+</html>

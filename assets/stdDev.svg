@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 -11 512.0002 512" xmlns="http://www.w3.org/2000/svg">
+  <circle style="stroke: rgb(0, 0, 0); fill: none; stroke-width: 12px;" cx="49.334" cy="151.004" r="30"/>
+  <circle style="stroke: rgb(0, 0, 0); fill: none; stroke-width: 12px;" cx="204.45" cy="103.655" r="30"/>
+  <circle style="stroke: rgb(0, 0, 0); fill: none; stroke-width: 12px;" cx="123.358" cy="457.369" r="30"/>
+  <circle style="stroke: rgb(0, 0, 0); fill: none; stroke-width: 12px;" cx="452.129" cy="189.931" r="30"/>
+  <circle style="stroke: rgb(0, 0, 0); fill: none; stroke-width: 12px;" cx="355.796" cy="114.936" r="30"/>
+  <circle style="stroke: rgb(0, 0, 0); fill: none; stroke-width: 12px;" cx="278.868" cy="350.615" r="30"/>
+  <line style="stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-width: 12px;" x1="15.404" y1="258.338" x2="496.597" y2="258.338"/>
+  <line style="stroke: rgb(0, 0, 0); stroke-dasharray: 20px; stroke-width: 12px; stroke-linecap: round; stroke-dashoffset: 17px;" x1="49.334" y1="186.854" x2="49.334" y2="259.851"/>
+  <line style="stroke: rgb(0, 0, 0); stroke-dashoffset: 1px; stroke-dasharray: 20px; stroke-width: 12px; stroke-linecap: round;" x1="123.358" y1="261.392" x2="123.358" y2="424.863"/>
+  <line style="stroke: rgb(0, 0, 0); stroke-dasharray: 20px; stroke-width: 12px; stroke-linecap: round; stroke-dashoffset: -18px;" x1="278.868" y1="259.252" x2="278.868" y2="319.912"/>
+  <line style="stroke: rgb(0, 0, 0); stroke-dasharray: 20px; stroke-width: 12px; stroke-linecap: round; stroke-dashoffset: 1px;" x1="204.45" y1="135.963" x2="204.45" y2="256.252"/>
+  <line style="stroke: rgb(0, 0, 0); stroke-dashoffset: 1px; stroke-dasharray: 20px; stroke-width: 12px; stroke-linecap: round;" x1="355.796" y1="148.3" x2="355.796" y2="253.168"/>
+  <line style="stroke: rgb(0, 0, 0); stroke-width: 12px; stroke-linecap: round; stroke-dasharray: 30px; stroke-dashoffset: 28px;" x1="452.129" y1="225.923" x2="452.129" y2="257.795"/>
+</svg>

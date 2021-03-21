@@ -1,0 +1,43 @@
+.summary {
+    display: flex;
+    width: 100%;
+    max-width: 70rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem auto;
+}
+
+.summary .card {
+    background-color: #EEE;
+    padding: 1.5rem;
+    width: 30%;
+    transition-duration: 0.2s;
+}
+
+.summary .card:hover { 
+    border-left: 0.5rem solid #555;
+    margin-right: -0.5rem;
+}
+
+.summary .card:last-child:hover {
+    margin-right: 0;
+}
+
+.summary .card .desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.summary .card .content {
+    margin: 2rem 2rem 0;
+}
+
+.summary .card .desc img {
+    width: 3rem;
+    transition-duration: 0.2s;
+}
+
+.summary .card .desc img:hover {
+    width: 4rem;
+}

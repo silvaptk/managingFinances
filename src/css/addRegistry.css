@@ -1,0 +1,134 @@
+form {
+    width: calc(100% - 2rem);
+    max-width: 70rem;
+    margin: 0 auto 2rem;
+    border-top: 0.5rem solid #555;
+}
+
+form .registryType {
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: fit-content;
+    gap: 2rem;
+}
+
+form .registryType button {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: var(--large);
+    justify-content: space-around;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    height: 5rem;
+    opacity: 0.5;
+}
+
+
+form .registryType button:hover,
+form .registryType button.active {
+    font-weight: bold;
+    font-size: calc(var(--large) + 0.5rem);
+    height: 8rem;
+    opacity: 1;
+}
+
+
+form .registryType button span {
+    width: fit-content;
+}
+
+form .registryType button img {
+    transition-duration: 0.3s;
+    height: 100%;
+}
+
+fieldset {
+    width: calc(100% - 3rem);
+    margin: 1.5rem auto;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset > div {
+    display: flex;
+    align-items: center;
+}
+
+fieldset legend {
+    padding: 0 1rem;
+    margin: 0 1rem;
+    font-size: var(--normal);
+    font-weight: bold;
+}
+
+fieldset legend span {
+    color: red;
+}
+
+fieldset input, 
+fieldset textarea {
+    border: none;
+    outline: none;
+    font-size: var(--normal);
+    padding: 0.2rem;
+    width: 100%;
+    resize: none;
+}
+
+fieldset textarea {
+    height: 3.2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type = number] {
+  -moz-appearance: textfield;
+}
+
+input[type = button] {
+    position: relative;
+    display: block;
+    width: calc(100% - 3rem);
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-size: var(--normal);
+    cursor: pointer;
+    transition-duration: 0.2s;
+    margin-bottom: 0.5rem;
+    background-color: #EEE;
+}
+
+input[type = button]:hover {
+    border-bottom: 0.5rem solid #555;
+    font-weight: bold;
+}
+
+input[type = button].submited {
+    background-color: rgba(0,255,0,0.2);
+    color: rgb(0,100,0);
+    border-bottom: 0.5rem solid rgb(0,100,0);
+    font-weight: bold;
+    cursor: not-allowed;
+}
+
+small {
+    font-size: var(--tiny);
+    font-style: italic;
+}
+
+fieldset small.warning {
+    color: red;
+}

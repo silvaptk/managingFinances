@@ -1,0 +1,57 @@
+<form name = "registryForm" ng-model = "registryForm">
+    <div class = "registryType">
+        <button 
+            type = "button"
+            ng-click = "registryType('income')" 
+            class = "{{currentRegistry.type === 'income' ? 'active' : ''}}"
+        >
+            <span>Entrada</span> 
+            <img 
+                src = "./assets/income.svg" 
+                alt = "Entrada" 
+                title = "Selecione se o registro for de tipo entrada" 
+                class = "{{currentRegistry.type === 'income' ? 'active' : ''}}"
+            />
+        </button>
+
+        <button 
+            type = "button"
+            ng-click = "registryType('expense')"
+            class = "{{currentRegistry.type === 'expense' ? 'active' : ''}}"    
+        >
+            <img 
+                src = "./assets/expense.svg" 
+                alt = "Saída" 
+                title = "Selecione se o registro for de tipo saída"
+                class = "{{currentRegistry.type === 'expense' ? 'active' : ''}}"    
+
+            />
+            <span>Saída</span>
+        </button>
+    </div>
+
+    <fieldset>
+        <legend>Nome <span>*</span></legend>
+        <input type = "text" name = "typedRegistryName"  ng-model = "typedRegistryName" placeholder = "Insira o nome da entrada aqui" required validate-registry-name/>
+        <small class = "warning" ng-show = "showWarning(registryForm.typedRegistryName)">Por favor, preencha o nome do registro corretamente.</small>
+    </fieldset>
+
+    <fieldset>
+        <legend>Valor <span>*</span></legend>
+        <div>R$<input type = "number" name = "typedRegistryValue" ng-model = "typedRegistryValue" placeholder = "Insira o valor da entrada aqui" required  validate-registry-value/></div>
+        <small class = "warning" ng-show = "showWarning(registryForm.typedRegistryValue)">Por favor, preencha o valor do registro corretamente.</small>
+    </fieldset>
+
+    <fieldset>
+        <legend>Data <span>*</span></legend>
+        <input type = "text" name = "typedRegistryDate"  ng-model = "typedRegistryDate" placeholder = "Insira a data da entrada aqui" required validate-registry-date/>
+        <small class = "warning" ng-show = "showWarning(registryForm.typedRegistryDate)">Preencha a data do registro corretamente (ex.: 01/01/2021).</small>
+    </fieldset>
+
+    <fieldset>
+        <legend>Descrição</legend>
+        <textarea name = "registryDescription" ng-model = "registryDescription" placeholder = "Se quiser, descreva a entrada aqui"></textarea>
+    </fieldset>
+
+    <input type = "button" value = "Adicionar" ng-click = "submitRegistry(registryForm, $event)">
+</form>

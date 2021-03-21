@@ -1,0 +1,26 @@
+<section class = "registries">
+    <div class = "registry" ng-repeat = "registry in registries | orderBy: 'date' : true">
+        <button class = "registryHeader deactivated" ng-click = "toggleDescription($index, $event)">
+            <img ng-if = "registry.type === 'income'" src = "./assets/wIncome.svg" alt = "">
+            <img ng-if = "registry.type === 'expense'" src = "./assets/wExpense.svg" alt = "">
+
+            <div><small>Data.</small> <strong>{{registry.date}}</strong></div> 
+
+            <div><small>Nome.</small> <strong>{{registry.name}}</strong></div>
+
+            <div><small>Valor.</small> <strong>R$ {{registry.value | currencyFormat}}</strong></div>
+        </button>
+
+        <div class = "registryDescription" ng-hide = "!showDescription[$index]">
+            <p><small>Tipo.</small> <strong ng-if = "registry.type === 'income'">Entrada</strong> <strong ng-if = "registry.type === 'expense'">Saída</strong></p>
+
+            <p><small>Nome.</small> <strong>{{registry.name}}</strong></p>
+
+            <p><small>Valor.</small> <strong>R$ {{registry.value | currencyFormat}}</strong></p>
+
+            <p><small>Data.</small> <strong>{{registry.date}}</strong></p>
+
+            <p><small ng-if = "registry.description">Descrição.</small> <strong>{{registry.description}}</strong></p>
+        </div>
+    </div>
+</section>

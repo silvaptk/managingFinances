@@ -1,0 +1,41 @@
+section.statistics {
+    width: calc(100% - 2rem);
+    max-width: 70rem;
+    margin: 0 auto 1rem;
+    padding: 2rem;
+    border-top: 0.5rem solid #555;
+}
+
+section.statistics .card {
+    padding: 3rem;
+    background-color: #EEE;
+    margin: 2rem;
+    transition-duration: 0.2s;
+    display: inline-flex;
+    flex-direction: column;
+    width: calc(50% - 4rem);
+}
+
+section.statistics .card:hover {
+    border-left: 0.5rem solid #555;
+    padding-right: 2.5rem;
+}
+
+section.statistics .card .cardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.statistics .card .cardHeader h3 {
+    width: calc(100% - 4rem);
+}
+
+section.statistics .card .cardHeader img {
+    width: 3rem;
+    transition-duration: 0.2s;
+}
+
+section.statistics .card img:hover {
+    width: 4rem;
+}

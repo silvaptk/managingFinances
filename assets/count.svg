@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <circle style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-width: 13px; stroke-dasharray: 50; stroke-dashoffset: -21px;" cx="252.57" cy="210.397" r="64.879"/>
+  <circle style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 13px;" cx="94.963" cy="72.33" r="41.464"/>
+  <circle style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 13px;" cx="248.692" cy="70.376" r="41.464"/>
+  <circle style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 13px;" cx="402.421" cy="74.285" r="41.464"/>
+  <circle style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 13px;" cx="97.579" cy="213.032" r="41.464"/>
+  <circle style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 13px; stroke-dasharray: 250, 50; stroke-dashoffset: 80px;" cx="-251.308" cy="-211.078" r="41.464" transform="matrix(-1, 0, 0, -1, 0, 0)"/>
+  <circle style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 13px;" cx="405.037" cy="214.986" r="41.464"/>
+  <g transform="matrix(10, 0, 0, 10, -6993.903809, -2432.126709)">
+    <line class="st3" x1="722.442" y1="272.496" x2="722.442" y2="279.496" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 1.6px;"/>
+    <line class="st3" x1="726.442" y1="271.496" x2="726.442" y2="274.496" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 1.6px;"/>
+    <line class="st3" x1="730.442" y1="272.496" x2="730.442" y2="274.496" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 1.6px;"/>
+    <line class="st3" x1="734.442" y1="273.496" x2="734.442" y2="275.496" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 1.6px;"/>
+    <path class="st3" d="M 736.742 272.496 C 735.442 272.296 734.442 273.296 734.442 274.496 L 734.442 273.596 C 734.442 272.596 733.742 271.696 732.742 271.496 C 731.442 271.296 730.442 272.296 730.442 273.496 L 730.442 272.596 C 730.442 271.596 729.742 270.696 728.742 270.496 C 727.442 270.296 726.442 271.296 726.442 272.496 L 726.442 265.596 C 726.442 264.596 725.742 263.696 724.742 263.496 C 723.542 263.296 722.442 264.296 722.442 265.496 L 722.442 273.996 C 722.442 272.496 721.142 271.396 719.642 271.496 C 719.142 271.496 718.742 271.696 718.442 271.996 L 718.442 279.696 C 718.442 284.796 722.342 289.296 727.442 289.496 C 727.742 289.496 728.042 289.496 728.242 289.496 C 734.042 289.296 738.442 284.396 738.442 278.596 L 738.442 278.496 L 738.442 274.596 C 738.442 273.596 737.742 272.696 736.742 272.496 Z" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 1.6px;"/>
+  </g>
+</svg>

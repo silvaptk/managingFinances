@@ -1,0 +1,97 @@
+:root {
+    --huge: 4rem;
+    --big: 3rem;
+    --large: 1.5rem;
+    --normal: 1rem;
+    --tiny: 0.75rem;
+
+    --foreground: #EEE;
+    --dark: #555;
+    --shadow: #000;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+    line-height: 1.5;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    width: fit-content;
+    margin: 1rem auto;
+    text-align: center;
+    text-transform: lowercase;
+    font-weight: 100;
+    font-style: italic;
+    font-size: var(--huge);
+    padding: 0 3rem;
+    transition-duration: 0.3s;
+    color: var(--dark);
+    background-color: var(--foreground);
+    display: block;
+}
+
+h1:hover {
+    margin-bottom: 3.5rem;
+    margin-top: 0.5rem;
+    box-shadow: 0.5rem 0.5rem var(--shadow);
+    text-shadow: 0.2rem 0.2rem var(--shadow);
+}
+
+h2 {
+    font-size: var(--big);
+    width: fit-content;
+    margin: 0;
+    color: #FFF;
+    background-color: var(--dark);
+    padding: 0 0.5rem;
+    transition-duration: 0.2s;
+    margin-top: 0.6rem;
+}
+
+h2:hover {
+    text-shadow: 0.3rem 0.3rem var(--shadow);
+    box-shadow: 0.3rem 0.3rem var(--shadow);
+    margin: 0.3rem -0.3rem;
+}
+
+h3 {
+    font-size: var(--large);
+}
+
+h4 {
+    font-size: var(--normal);
+    margin: 0;
+}
+
+/* Contêiner das seções */
+
+.sectionConteiner {
+    display: inline-block;
+    width: 100%;
+    height: fit-content;
+    transition: height ease 0.5s, opacity ease 0.2s;
+    -webkit-transition: height ease 0.5s, opacity ease 0.2s;
+    position: absolute;
+    overflow: hidden;
+}
+
+.sectionConteiner.ng-enter {
+    opacity: 0;
+    max-height: 0;
+}
+.sectionConteiner.ng-enter-active {
+    opacity: 0;
+    max-height: 2000rem;
+}
+.sectionConteiner.ng-leave {
+    max-height: 2000rem;
+}
+.sectionConteiner.ng-leave-active {
+    max-height: 0;
+}
