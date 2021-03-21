@@ -16,6 +16,10 @@ Estou utilizando essa simples ideia que tive como laboratório de AngularJS, a p
 
 A aplicação não é exatamente funcional, pois os registros só ficarão salvos até que a página seja recarregada. Em breve, pretendo integrá-la ao banco de dados MySQL. Além disso, também pretendo empregar Sass na produção das folhas de estilo, para tornar a página responsiva
 
+## Experimentando
+
+Para experimentá-la em seu computador, basta fazer o *download* do repositório e utilizar o navegador para acessar o arquivo `index.html`.
+
 ## Contato
 
 Fique à vontade para sugerir novas *features*, melhorias nas já existentes, correções e sugestões e para discutir algo sobre o código. Me envie um e-mail (patrick.silva2717@outlook.com) ou converse comigo via LinkedIn (linkedin.com/in/silvaptk). 
